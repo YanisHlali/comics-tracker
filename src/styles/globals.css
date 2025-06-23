@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-marvel-red: #ED1D24;
+  --color-marvel-black: #202020;
+  --color-marvel-gray: #1C1C1C;
+  --color-marvel-white: #FFFFFF;
+  --color-marvel-yellow: #FFD700;
+  --font-period: 'Roboto Condensed', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+.dark {
+  --color-marvel-white: #E4E4E4;
+  --color-marvel-gray: #2A2A2A;
+}
+
+html {
+  font-size: 17px;
+  background: var(--color-marvel-black);
+  color: var(--color-marvel-white);
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: var(--color-marvel-black);
+  color: var(--color-marvel-white);
+}
+
+body.dark {
+  background: var(--color-marvel-gray);
+  color: var(--color-marvel-white);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-marvel-black);
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--color-marvel-red);
+  z-index: 100;
+  transition: width 0.2s ease-in-out;
+}
+
+.transition-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
