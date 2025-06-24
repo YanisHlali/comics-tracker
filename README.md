@@ -60,7 +60,6 @@ npm run dev
 
 ## 📌 TODO / pistes d'amélioration
 
-* Authentification pour favoris ou suivi de lecture
-* Mode offline avec service workers
-* Amélioration des performances pour les grandes périodes
-* Interface d’admin pour l’import de nouveaux comics
+* Amélioration de la lecture en ligne
+* Afficher plus de périodes
+* Navigation plus fluide et responsive
