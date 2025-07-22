@@ -80,10 +80,6 @@ scripts/              // Scripts Node.js pour le nettoyage et l’analyse du cod
 
 Le projet est optimisé pour un déploiement sur [Vercel](https://vercel.com/). Suivre la documentation Next.js pour la mise en production.
 
-## Contribution
-
-Les contributions sont les bienvenues ! Ouvre une issue ou une pull request pour proposer des améliorations ou corriger des bugs.
-
 ## Licence
 
 Ce projet est sous licence ISC.
