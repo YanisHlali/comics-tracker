@@ -1,0 +1,46 @@
+{
+  "name": "comics-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "cleanup:analyze": "node scripts/cleanup.js",
+    "cleanup:imports": "node scripts/clean-imports.js",
+    "cleanup:exports": "node scripts/analyze-exports.js",
+    "cleanup:all": "npm run cleanup:analyze && npm run cleanup:imports",
+    "cleanup:check": "npm run type-check && npm run lint",
+    "cleanup:safe": "npm run cleanup:analyze && npm run cleanup:imports && npm run cleanup:check"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.13.8",
+    "@vercel/analytics": "^1.5.0",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.525.0",
+    "next": "^15.3.4",
+    "nodemailer": "^7.0.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.14",
+    "eslint": "latest",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.8.3"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
+}

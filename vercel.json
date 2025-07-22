@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  
+  "functions": {
+    "pages/**/*.js": {
+      "includeFiles": "data/**"
+    },
+    "pages/api/**/*.js": {
+      "includeFiles": "data/**"
+    }
+  },
+  
+  "build": {
+    "env": {
+      "NEXT_INCLUDE_DATA": "true"
+    }
+  },
+  
+  "rewrites": [
+    {
+      "source": "/issue/:issueId",
+      "destination": "/issue/[issueId]"
+    },
+    {
+      "source": "/serie/:serieId", 
+      "destination": "/serie/[serieId]"
+    },
+    {
+      "source": "/event/:eventId",
+      "destination": "/event/[eventId]"
+    },
+    {
+      "source": "/period/:periodId",
+      "destination": "/period/[periodId]/index"
+    },
+    {
+      "source": "/period/:periodId/series",
+      "destination": "/period/[periodId]/series"
+    }
+  ]
+}
